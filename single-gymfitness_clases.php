@@ -9,8 +9,11 @@ get_header();
   ?>
   </section>
   <aside>
-    <h2>Sidebar aqui</h2>
+  <?php
+  get_sidebar();
+  ?>  
   </aside>
+  
 </main>
 <?php
 get_footer();

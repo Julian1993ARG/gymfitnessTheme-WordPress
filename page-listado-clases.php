@@ -7,7 +7,7 @@ get_header();
 ?>
 
 <main class="contenedor section">
-<?php
+  <?php
   get_template_part('template-parts/pagina')
   ?>
 
@@ -25,16 +25,16 @@ get_header();
         <?php the_post_thumbnail(); ?>
         <div class="contenido">
           <a href="<?php the_permalink() ?>">
-          <h3><?php the_title(); ?></h3>
+            <h3><?php the_title(); ?></h3>
           </a>
           <?php
-           $hora_inicio = get_field('hora_inicio');
-            $hora_fin = get_field('hora_fin');
+          $hora_inicio = get_field('hora_inicio');
+          $hora_fin = get_field('hora_fin');
           ?>
 
           <p><?php the_field('dias_clase'); ?> - <?php echo $hora_inicio . " a " . $hora_fin ?></p>
 
-      </div>
+        </div>
       </li>
     <?php
     }
